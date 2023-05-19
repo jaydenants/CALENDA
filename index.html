@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Calendar</title>
+    <style>
+        body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:linear-gradient(to right,orange,#4d77aa 70%);
+    margin: 0px;
+}
+
+
+.stuff{
+    width: 600px;
+    height: 600px;
+    background-color: white;
+}
+#sty{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 40px;
+}
+
+#monty{
+    color: black;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    
+}
+.man button{
+    color: rgb(205, 204, 204);
+    font-size: 30px;
+    cursor: pointer;
+}
+.man button:hover{
+    color: white;
+}
+.man{
+background-color: black;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+height: 40px;
+padding: 20px;
+}
+.maint{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 20px;
+}
+.maint h2{
+    width: calc(100% / 7);
+    height: 100%;
+    text-align: center;
+}
+
+#dat{
+   height: 450px;
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+}
+#dat div{
+    width: calc(100% / 7);
+    height: calc(100% / 6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+}
+#dat div:hover{
+    background-color: rgb(216, 211, 204);
+}
+.grey{
+    color: rgb(111, 108, 108);
+}
+
+    </style>
+</head>
+<body>
+
+
+<div class="stuff">
+    <div id="man">
+    <div id="sty">
+        <button id="button1" onclick="course(-1)">Back</button>
+
+        <div id="monty"></div>
+
+        <button id="button2" onclick="course(1)">Next</button>
+    </div>
+    </div>
+
+
+    <div class="maint">
+        <h2>S</h2>
+        <h2>M</h2>
+        <h2>T</h2>
+        <h2>W</h2>
+        <h2>T</h2>
+        <h2>F</h2>
+        <h2>S</h2>
+    </div>
+    <div id="dat"></div>
+
+</div>
+
+
+
+    
+</body>
+<script src="./index.js"></script>
+</html>
